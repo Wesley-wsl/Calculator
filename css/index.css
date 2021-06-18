@@ -24,14 +24,40 @@ p {
     margin: 0 auto;
     border-radius: 10px;
     margin-top: 50px;
+    padding-bottom: 10px;
 }
 
 .visor {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-color: rgb(0, 0, 19);
-    text-align: center;
     width: 300px;
     height: 150px;
     border-radius: 10px;
+}
+
+.input {
+    font-size: 25px;
+    margin-bottom: 70px;
+    max-width: 200px;
+}
+
+.output{
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 60px;
+    text-align: end;
+    max-width: 200px;
+}
+
+.gold, .input {
+    color: rgb(150, 128, 2);
+    text-shadow: 1px 1px 2px gold;
+}
+
+.grey {
+    color: rgb(80, 74, 136);
 }
 
 .keys {
@@ -40,12 +66,7 @@ p {
     text-align: center;
 }
 
-.gold {
-    color: rgb(150, 128, 2);
-    text-shadow: 1px 1px 5px gold;
-}
-
-.number {
+.number, .output {
     text-shadow: 1px 1px 5px rgb(5, 91, 204);
 }
 
@@ -53,6 +74,14 @@ p {
     margin: 15px 1px;
 }
 
-.grey {
-    color: rgb(80, 74, 136);
+.number:hover, .operators:hover {
+    background-color: rgb(17, 0, 255);
+    box-shadow: 2px 2px 20px 5px rgb(17, 0, 255);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.gold:hover {
+    background-color: rgba(150, 128, 2, 0.76);
+    box-shadow: 2px 2px 20px 5px rgba(150, 128, 2, 0.76);
 }
