@@ -48,7 +48,6 @@ p {
     font-size: 60px;
     text-align: end;
     max-width: 270px;
-    overflow-x: auto;
 }
 
 .gold, .input {
@@ -70,11 +69,11 @@ p {
     text-shadow: 1px 1px 5px rgb(5, 91, 204);
 }
 
-.number, .operators {
+.number, .operators, .clear {
     margin: 15px 1px;
 }
 
-.number:hover, .operators:hover {
+.number:hover, .operators:hover, .clear:hover {
     background-color: rgb(17, 0, 255);
     box-shadow: 2px 2px 20px 5px rgb(17, 0, 255);
     border-radius: 15px;
