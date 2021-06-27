@@ -78,6 +78,7 @@ function calculate() {
                         break
                 }
             }
+            $input.innerText = ''
         }, 1)
     }
 }
