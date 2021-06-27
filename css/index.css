@@ -70,11 +70,11 @@ p {
     text-shadow: 1px 1px 5px rgb(5, 91, 204);
 }
 
-.number, .operators, .clear, .porcentage {
+.number, .operators, .clear, .porcentage, .dot {
     margin: 15px 1px;
 }
 
-.number:hover, .operators:hover, .clear:hover, .porcentage:hover{
+.number:hover, .operators:hover, .clear:hover, .porcentage:hover, .dot:hover{
     background-color: rgb(17, 0, 255);
     box-shadow: 2px 2px 20px 5px rgb(17, 0, 255);
     border-radius: 15px;

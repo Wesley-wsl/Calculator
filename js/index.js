@@ -6,6 +6,7 @@ const $clear = document.querySelector('[data-js="clear"]')
 const $clearAll = document.querySelector('[data-js="clearAll"]')
 const $equal = document.querySelector('[data-js="equal"]')
 const $porcentage = document.querySelector('[data-js="porcentage"]')
+const $dot = document.querySelector('.dot')
 let equation
 let result = 0
 
@@ -13,6 +14,13 @@ $clear.addEventListener('click', clear)
 $clearAll.addEventListener('click', clearAll)
 $equal.addEventListener('click', calculate)
 $porcentage.addEventListener('click', porcentage)
+
+$dot.addEventListener('click', () => {
+    if ($output.innerText != '') {
+        $output.innerText += $dot.textContent
+    }
+})
+
 
 $number.forEach((element) => {
     element.addEventListener('click', () => {
@@ -80,9 +88,9 @@ function equationManipulation() {
     equation.shift()
     equation.unshift(result)
 
-    for(index in equation) {
-        if(equation[index] == '=') {
-            equation.splice(index,1)
+    for (index in equation) {
+        if (equation[index] == '=') {
+            equation.splice(index, 1)
         }
     }
 }
@@ -90,7 +98,7 @@ function equationManipulation() {
 function porcentage() {
     console.log('Olá')
     let porcentage = $output.innerText
-    $output.innerText = Number(porcentage/100)
+    $output.innerText = Number(porcentage / 100)
 }
 
 function clear() {
