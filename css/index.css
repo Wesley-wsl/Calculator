@@ -71,6 +71,9 @@ p {
 }
 
 .number, .operators, .clear, .porcentage, .dot {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
     margin: 15px 1px;
 }
 
